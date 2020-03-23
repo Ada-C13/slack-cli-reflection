@@ -9,48 +9,48 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: One GET request the project makes is to request the info related to all members. The basic format of the request is set up on the recipient.rb file using the self.get_recipient method. This method can then be inherited by the Member and Channel classes. When used in Member class, it will subsitute in the url and query parameters required for getting slack members and then save the info down to an array. 
 1. What is the verb of this request?
-    - Answer:
+    - Answer: GET (query)
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: 'https://slack.com/api/users.list'
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer: Token
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
       # Copy and paste your answer below this comment
-
+        response = HTTParty.get(url, query: query_parameters)
       # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: Request was a success and program will continue
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: Request was not a success and program will prompt the user to fix the issue
 
 ### `POST` Request Review
 
 If your project does not make a POST request, read through Wave 3 on the original Slack CLI, and research and answer questions 1, 2, 3, 4, 6, and 7.
 
 1. Describe a POST request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: One POST request the project makes is to send messages through the app. The basic format of the request is set up in the recipient.rb file using the send_message method. This method can then be inherited by the Member and Channel classes. When used in Member class, it will subsitute in the url and query parameters required sending messages. If no recipient has been select, the user will be notified that the message was not sent and the program will prompt the user for the next action. 
 1. What is the verb of this request?
-    - Answer:
+    - Answer: POST (command)
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: 'https://slack.com/api/chat.postMessage'
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer: Token, message to be sent, the id of the recipient
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
       # Copy and paste your answer below this comment
-
+        response = HTTParty.post(MESSAGE_URL,query: query_parameters)
       # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: The program will notify the user that their message was successfully sent and then continue to run, prompting the user for their next action. 
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: The request was not successfully and the user will be notified that the message was not sent. The program will then continue to run and prompt the user for their next action.
 
 ## Request & Response Cycle
 
@@ -62,11 +62,11 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: 
+    - Answer: query (through get request)
 1. Who is the client?
-    - Answer: 
+    - Answer: Grace
 1. Who is the server?
-    - Answer: 
+    - Answer: Slack API
 
 ## Part 2: Optional Refactoring
 
