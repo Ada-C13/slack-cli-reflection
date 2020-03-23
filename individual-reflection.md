@@ -9,13 +9,13 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer: On a high level, 'GET' request is asking to get information from Slack API - given the paramters specified in the request- on the user or channel. Get request is made in the Recipient class (User and Channel class inherit from). 
+    - Answer: On a high level, 'GET' request is asking to get information from Slack API- given the paramters specified in the request- on the user or channel. Get request is made in the Recipient class (User and Channel class inherit from). 
 1. What is the verb of this request?
     - Answer: 'get'
 1. What is the path (or the URL, or endpoint) of this request?
     - Answer: base url ('https://slack.com/api/'), specific endpoint ('users.list' or 'conversations.list'), and the authorization token. 
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: other than the base url, endpoint, and authorization token, Slack API documentation indicates other iformation such as cursor, xclude-archieved, etc. can be put in as optional params. However the base url, endpoint, and Authorization token are the three necessary params needed to make a successful request. 
+    - Answer: other than the base url, endpoint, and authorization token, Slack API documentation indicates other iformation such as cursor, exclude-archieved, etc. can be put in as optional params. However the base url, endpoint, and Authorization token are the three necessary params needed to make a successful request. 
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
