@@ -9,48 +9,58 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: gets a list of users from the slack api
 1. What is the verb of this request?
-    - Answer:
+    - Answer: GET
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer:  https://slack.com/api/users.list
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer:  token: ENV["SLACK_TOKEN"]
+
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
-      # Copy and paste your answer below this comment
+            response = HTTParty.get(endpoint, query: query_parameters)
 
-      # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer:  returns a proper JSON response
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: raise SlackApiError, "there was a problem with the request"
 
 ### `POST` Request Review
 
 If your project does not make a POST request, read through Wave 3 on the original Slack CLI, and research and answer questions 1, 2, 3, 4, 6, and 7.
 
 1. Describe a POST request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: Sends a message to a channel.
 1. What is the verb of this request?
-    - Answer:
+    - Answer: POST
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: 	https://slack.com/api/chat.postMessage
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer: token:ENV["BOT_TOKEN"]
+              channel: C1234567890
+              text: Hello, world!
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
-      # Copy and paste your answer below this comment
+        endpoint = BASE_URL + "chat.postMessage"
 
-      # Copy and paste your answer above this comment
+        response = HTTParty.post(
+          endpoint,
+          body: { 
+            token:ENV["BOT_TOKEN"], 
+            text: message, 
+            channel: channel
+          },
+          headers: { 'Content-Type' => 'application/x-www-form-urlencoded' }
+        )
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: posts the message as requested
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: raise SlackApiError, "trouble posting a message"
 
 ## Request & Response Cycle
 
@@ -62,11 +72,11 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: 
+    - Answer: GET request to Slack Api to list all the channels
 1. Who is the client?
-    - Answer: 
+    - Answer: Grace the human and her laptop
 1. Who is the server?
-    - Answer: 
+    - Answer: Slack Api
 
 ## Part 2: Optional Refactoring
 
