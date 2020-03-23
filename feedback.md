@@ -118,9 +118,7 @@
    <td>1. As a user of the CLI program, I can <strong>list</strong> users and channels with the commands <code>list users</code> and <code>list channels</code>
    </td>
    <td>
-      No- The slack.rb is throwing an error of 
-      "Users/mairbear/Developer/Ada_Projects/Classroom/API/week-6/slack-cli-reflection/slack-cli/lib/user.rb:18:in `load_all': undefined method `each' for nil:NilClass (NoMethodError)"
-      It seems like there's an error when making a call to the Slack API.
+      Yes
    </td>
 
   </tr>
@@ -128,7 +126,7 @@
    <td>2. As a user of the CLI program, I can <strong>select</strong> users and channels	with the commands <code>select user</code> and <code>select channel</code>
    </td>
    <td>
-      No
+      Yes
    </td>
   </tr>
 
@@ -136,7 +134,7 @@
    <td>3. As a user of the CLI program, I can show the details of a selected user or channel	with the command <code>details</code>
    </td>
    <td>
-      No
+      Yes
    </td>
   </tr>
 
@@ -144,7 +142,7 @@
    <td>4. As a user of the CLI program, when I input something inappropriately, the program runs without crashing. Example commands to try are <code>do_something</code>, or <code>select user</code> followed by <code>Mr. Fakename</code>
    </td>
    <td>
-      No
+      No - it crashes when I select to send a message a message but no user or channel has been selected. 
    </td>
   </tr>
 </table>
