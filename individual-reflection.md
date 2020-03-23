@@ -94,9 +94,9 @@ If your reflection inspired you to make minimal changes to your Slack CLI implem
 Answer: added the following code in recipient class to account for API error when sending message. 
 
     ```ruby
-      # Copy and paste your answer below this comment
-            if resp.parsed_response["ok"] == false || resp.code != 200
-                raise SlackAPIError, "Error on API #{resp["error"]}"
-            end 
-      # Copy and paste your answer above this comment
+    # Copy and paste your answer below this comment
+        if resp.parsed_response["ok"] == false || resp.code != 200
+            raise SlackAPIError, "Error on API #{resp["error"]}"
+        end 
+    # Copy and paste your answer above this comment
     ```
