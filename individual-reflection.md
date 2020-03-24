@@ -9,7 +9,7 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer:I think unlike many of my classmates I call my get method in the initialize of workspace. This made sense to me at the time because one of the first things I wanted was a list of users and channels. To get that list I used a self.get method and pased in the url. This method uses HTTParty.get to get a response form slack. If the request is no good we raise an error.
 1. What is the verb of this request?
     - Answer:
 1. What is the path (or the URL, or endpoint) of this request?
