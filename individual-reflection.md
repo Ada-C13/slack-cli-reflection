@@ -9,7 +9,7 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: File: recipient.rb, line: 18. The GET request info from the SLACK API, Not modify it in any way. It returns an slackError if the info is not found. If the request is successful (200 and parsed_response: "ok") it returns the response in a variable called `resp` as a JSON.
 1. What is the verb of this request?
     - Answer:
 1. What is the path (or the URL, or endpoint) of this request?
