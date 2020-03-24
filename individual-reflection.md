@@ -11,22 +11,25 @@ Answer the following comprehension questions **within this file.** Write your an
 1. Describe a GET request that your project makes, and the high-level description of what it does
     - Answer: File: recipient.rb, line: 18. The GET request info from the SLACK API, Not modify it in any way. It returns an slackError if the info is not found. If the request is successful (200 and parsed_response: "ok") it returns the response in a variable called `resp` as a JSON.
 1. What is the verb of this request?
-    - Answer:
+    - Answer: GET
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: URL: `"https://slack.com/api/users.list` , `"https://slack.com/api/channels.list`
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
     - Answer: 
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
       # Copy and paste your answer below this comment
-
+        base_url = "https://slack.com/api/"
+        post_url = "#{base_url}channels.list"
+        params = { token: ENV["SLACK_API_TOKEN"] }
+        response: HTTParty.get(pots_url, query: params)
       # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: It saves the response within a variable called `resp`.
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: It has a class called `SlackAPIError` to handle the exception with the error and comment: "We encountered a problem".
 
 ### `POST` Request Review
 
