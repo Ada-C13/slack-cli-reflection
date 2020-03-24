@@ -50,7 +50,7 @@ If your project does not make a POST request, read through Wave 3 on the origina
 1. What does the program do if the response comes back with a status code of 200?
     - Answer: *The program puts "Message sent successfully." to the CLI user and posts a message to the selected channel/user.*
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: The program raises a custom exception and does not post anything. 
+    - Answer: *The program raises a custom exception and does not post anything.* 
 
 ## Request & Response Cycle
 
@@ -62,11 +62,11 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: In layman's terms the request is saying: "Get me a list of all channels in the workspace. In this list include the channel name, slack id, topic, and member count." 
+    - Answer: *In layman's terms the request is saying: "Get me a list of all channels in the workspace. In this list include the channel name, slack id, topic, and member count."* 
 1. Who is the client?
-    - Answer: slack.rb
+    - Answer: *slack.rb*
 1. Who is the server?
-    - Answer: Slack API
+    - Answer: *Slack API*
 
 ## Part 2: Optional Refactoring
 
@@ -80,4 +80,4 @@ If your reflection inspired you to make minimal changes to your Slack CLI implem
 
 ### Describe your optional Slack CLI changes here
 
-Answer: For my initial submission I did not perform a post request, nor did I have a "send message" feature for my CLI. Thus, I went back and implemented that functionality and created tests for it before answering the questions under "Post Request Review". I also did a little re-formatting. There are no other changes to the project I wish to make at this time.  
+Answer: *For my initial submission I did not perform a post request, nor did I have a "send message" feature for my CLI. Thus, I went back and implemented that functionality and created tests for it before answering the questions under "Post Request Review". I also did a little re-formatting. There are no other changes to the project I wish to make at this time.*
