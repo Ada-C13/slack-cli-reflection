@@ -70,11 +70,11 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: 
+    - Answer: a GET request being made which is trying to get a response on a list of channels and their info in the workspace.
 1. Who is the client?
-    - Answer: 
+    - Answer: Grace and the computer
 1. Who is the server?
-    - Answer: 
+    - Answer: Slack 
 
 ## Part 2: Optional Refactoring
 
