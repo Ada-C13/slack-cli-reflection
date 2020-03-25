@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Olga
+- Reviewer: Hannah J
+- Classroom: Time
 
 ## Manual App Testing
 
