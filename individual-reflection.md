@@ -11,7 +11,7 @@ Answer the following comprehension questions **within this file.** Write your an
 1. Describe a GET request that your project makes, and the high-level description of what it does
     - Answer: The User class method .load_all uses a GET request (via it's parent's (Recipient) .get_response method) to print the Workspace's user list.
 1. What is the verb of this request?
-    - Answer: users.list
+    - Answer: GET
 1. What is the path (or the URL, or endpoint) of this request?
     - Answer: https://slack.com/api/users.list
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
@@ -47,7 +47,7 @@ If your project does not make a POST request, read through Wave 3 on the origina
 1. Describe a POST request that your project makes, and the high-level description of what it does
     - Answer: The message_to_outbox method in Workspace uses post to send a message to the selected user.
 1. What is the verb of this request?
-    - Answer:
+    - Answer: POST
 1. What is the path (or the URL, or endpoint) of this request?
     - Answer: https://slack.com/api/chat.postMessage
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
