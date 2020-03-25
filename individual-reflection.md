@@ -9,48 +9,56 @@ Answer the following comprehension questions **within this file.** Write your an
 ### `GET` Request Review
 
 1. Describe a GET request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: In my project I made GET request to sleck server to get date for users and chennels. In this case GET  request for data to Slack and Slack response my request and gives me data in json if code is fine.
 1. What is the verb of this request?
-    - Answer:
+    - Answer: Verb of request is GET.
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: This is the example of the URL in my prject "https://slack.com/api/channels.list"
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer: Beside the verb and the path, Token is part of query params to.
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
+
+    response = Channel.get("https://slack.com/api/channels.list")
+ 
       ```ruby
       # Copy and paste your answer below this comment
 
       # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: When the resoonse come back with status code 200, everything is fine and we are able to get the response that we require.
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: If response does not come back with a status code 200, something is wrong and we have to check which status code came back and to try to fix the problem(In my project if the status is not 200 the program will raise SlackAPIError)
 
 ### `POST` Request Review
 
 If your project does not make a POST request, read through Wave 3 on the original Slack CLI, and research and answer questions 1, 2, 3, 4, 6, and 7.
 
 1. Describe a POST request that your project makes, and the high-level description of what it does
-    - Answer:
+    - Answer: In high-level Post requests allowed me to post massage to sleck channel if status code is 200.
 1. What is the verb of this request?
-    - Answer:
+    - Answer: Verb of request is POST.
 1. What is the path (or the URL, or endpoint) of this request?
-    - Answer:
+    - Answer: url = "https://slack.com/api/chat.postMessage"
 1. What are the query params (the additional data sent with the request, besides the verb and the path)?
-    - Answer: 
+    - Answer: Beside the verb and the path, Token, message, chennel are part of query params to.
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
+
+    url = "https://slack.com/api/chat.postMessage"
+    query = {token: ENV["BOT_TOKEN"], channel: self.slack_id, text: msg}
+
+    response = HTTParty.post(url, query: query)
       ```ruby
       # Copy and paste your answer below this comment
 
       # Copy and paste your answer above this comment
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: 
+    - Answer: When the resoonse come back with status code 200, everything is fine and we are able to post message to particular channel or user.
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: 
+    - Answer: If response does not come back with a status code 200, something is wrong and we have to check which status code came back and to try to fix the problem(In my project if the status is not 200 the program will raise SlackAPIError)
 
 ## Request & Response Cycle
 
@@ -62,11 +70,11 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: 
+    - Answer: GET list of the channnel.
 1. Who is the client?
-    - Answer: 
+    - Answer: Human user is client.
 1. Who is the server?
-    - Answer: 
+    - Answer: Slack API is server. 
 
 ## Part 2: Optional Refactoring
 
