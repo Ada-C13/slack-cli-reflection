@@ -82,7 +82,7 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: GET request
+    - Answer: GET request to the conversations-list endpoint that retrieves all the channels in the workspace
 1. Who is the client?
     - Answer: Grace and their computer
 1. Who is the server?
