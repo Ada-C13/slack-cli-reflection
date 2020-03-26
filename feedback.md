@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Kate 
+- Reviewer: Sara Nilsen 
+- Classroom: Space 
 
 ## Manual App Testing
 
@@ -17,7 +17,7 @@
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -35,7 +35,7 @@
       3. Implements inheritance and inheritance idioms. There is a Recipient class. User and Channel inherit from Recipient. In Recipient, there are appropriate methods defined that are used in both User and Channel. Some may be implemented. Some may be template methods.	
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -51,7 +51,7 @@
   </ul>
     </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
