@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Haben 
+- Reviewer: Ross
+- Classroom: Time
 
 ## Manual App Testing
 
