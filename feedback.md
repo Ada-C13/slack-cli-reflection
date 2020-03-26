@@ -16,18 +16,15 @@
     <td>
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
 
-
-      testing 123
-
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
   <tr>
     <td>
-      2. Practices error handling with APIs. (For all pieces of code that make an API call, it handles API requests that come back with errors/error status codes appropriately.)
+      1. Practices error handling with APIs. (For all pieces of code that make an API call, it handles API requests that come back with errors/error status codes appropriately.)
    </td>
    <td>
       yes/no
