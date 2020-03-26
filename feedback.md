@@ -15,7 +15,6 @@
   <tr>
     <td>
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
-
     </td>
     <td>
       yes
