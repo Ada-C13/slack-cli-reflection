@@ -1,7 +1,7 @@
 # Feedback Rubric
 
 - Student Being Reviewed:
-- Reviewer:
+- Reviewer: Katie Vandervoort
 - Classroom:
 
 ## Manual App Testing
