@@ -35,7 +35,8 @@
       3. Implements inheritance and inheritance idioms. There is a Recipient class. User and Channel inherit from Recipient. In Recipient, there are appropriate methods defined that are used in both User and Channel. Some may be implemented. Some may be template methods.	
    </td>
    <td>
-      yes
+      yes -
+      Nice parallel methods defined in Recipient class to get data and send messages.
    </td>
   </tr>
 
@@ -51,7 +52,7 @@
   </ul>
     </td>
    <td>
-      yes
+      yes - Great job using `.find` method with select_channel and select_user methods in workspace.rb - very clean and clear execution. For Slack.rb `main` method, could pull out user-facing gets.chomp pieces into a separate helper method.
    </td>
   </tr>
 
@@ -118,7 +119,8 @@
    <td>1. As a user of the CLI program, I can <strong>list</strong> users and channels with the commands <code>list users</code> and <code>list channels</code>
    </td>
    <td>
-      yes
+      yes - when listing channels, tableprint prints code in the form `"value" => "Company-wide announcements..."` . 
+      When selecting a valid option from the menu, a message is printed out to the user: "This exception will be rescued!" 
    </td>
 
   </tr>
