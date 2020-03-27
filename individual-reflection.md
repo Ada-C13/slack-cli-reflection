@@ -70,7 +70,7 @@ Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
     - Answer: the request is GET because Grace wants the list of channels. 
 1. Who is the client?
-    - Answer: the client is the program slack.rb requesting the server slack API to look for the data requested and sends that date back to the program(client).
+    - Answer: Grace
 1. Who is the server?
     - Answer: the server is the Slack API because it serve us the requested data. 
 
