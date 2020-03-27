@@ -88,4 +88,4 @@ If your reflection inspired you to make minimal changes to your Slack CLI implem
 
 ### Describe your optional Slack CLI changes here
 
-Answer: During the project time I changed and refactored my code few times. I looked my code few times to see if it's something else that I can refactor and what I end up doing is I just made my code to look more clean and more readable.
+Answer: During the project time I changed and refactored my code few times. I looked my code few times to see if it's something else that I can refactor and what I end up doing is i change my tests for example before was "jeta" as a user in test and i cahnge to "slackbot" so if the other ppl run my code thay will be able to pass all the test i guess and i did same thing with rendom channel.
