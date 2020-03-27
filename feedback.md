@@ -1,7 +1,7 @@
 # Feedback Rubric
 
-- Student Being Reviewed: Sara  
-- Reviewer: Kate
+- Student Being Reviewed: Kate 
+- Reviewer: Sara
 - Classroom: Space
 
 ## Manual App Testing
@@ -142,7 +142,8 @@
    <td>4. As a user of the CLI program, when I input something inappropriately, the program runs without crashing. Example commands to try are <code>do_something</code>, or <code>select user</code> followed by <code>Mr. Fakename</code>
    </td>
    <td>
-      Yes!
+      Yes! 
+      GREAT JOB
    </td>
   </tr>
 </table>
