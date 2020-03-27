@@ -19,10 +19,10 @@ Answer the following comprehension questions **within this file.** Write your an
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
-   query = {
-      token: ENV["SLACK_TOKEN"]
-    }
-    response = HTTParty.get(BASE_URL + "conversations.list", query: query)
+        query = {
+            token: ENV["SLACK_TOKEN"]
+            }
+            response = HTTParty.get(BASE_URL + "conversations.list", query: query)
       ```
 1. What does the program do if the response comes back with a status code of 200?
     - Answer: it give you back the data of what endpoint you were calling
@@ -44,12 +44,12 @@ If your project does not make a POST request, read through Wave 3 on the origina
 1. What is the syntax used to make this request? (Copy and paste a code snippet here)
     - Answer:
       ```ruby
-      query = {
-      token: ENV["SLACK_TOKEN"],
-      text: message, 
-      channel: @slack_id
-    }
-    response = HTTParty.post(BASE_URL + "chat.postMessage", query: query)
+        query = {
+        token: ENV["SLACK_TOKEN"],
+        text: message, 
+        channel: @slack_id
+        }
+        response = HTTParty.post(BASE_URL + "chat.postMessage", query: query)
       ```
 1. What does the program do if the response comes back with a status code of 200?
     - Answer: it means it has successfully sent the data
