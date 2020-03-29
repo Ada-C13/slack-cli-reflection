@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Becca
+- Reviewer: Shonda
+- Classroom: Space
 
 ## Manual App Testing
 
@@ -17,7 +17,7 @@
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -26,7 +26,7 @@
       2. Practices error handling with APIs. (For all pieces of code that make an API call, it handles API requests that come back with errors/error status codes appropriately.)
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -35,7 +35,7 @@
       3. Implements inheritance and inheritance idioms. There is a Recipient class. User and Channel inherit from Recipient. In Recipient, there are appropriate methods defined that are used in both User and Channel. Some may be implemented. Some may be template methods.	
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -44,14 +44,14 @@
       4. Practices clean code. 
   <ul>
 
-  <li>lib/slack.rb only interacts with Workspace (to show a separation of responsibilities). 
+  <li>lib/slack.rb only interacts with Workspace (to show a separation of responsibilities).
 
   <li>Complex logic is broken into smaller helper methods. (There aren’t more than one or two methods that are 30 lines or more)
   </li>
   </ul>
     </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -60,47 +60,43 @@
     5. Practices instance methods vs. class methods appropriately. (The methods to list all Channels or Users is a class method within those respective classes.)
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
-
 
   <tr>
     <td>
       6. Practices best practices for testing. (The project has and uses VCR mocking when running tests, and can run offline.)
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
-
 
   <tr>
     <td>
       7. Practices writing tests. (The User, Channel, and Workspace classes have unit tests.)	
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
-
 
   <tr>
     <td>
       8. There are also tests for sending messages (the location of these tests may differ, but is likely in Recipient)	
     </td>
     <td>
-      yes/no
+      Kind of program tested method for sending messages. However, did not test that a actual message was sent.
     </td>
   </tr>
-
 
   <tr>
     <td>
       9. Practices git with at least 15 small commits and meaningful commit messages	
    </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 </table>
@@ -118,7 +114,7 @@
    <td>1. As a user of the CLI program, I can <strong>list</strong> users and channels with the commands <code>list users</code> and <code>list channels</code>
    </td>
    <td>
-      yes/no
+      yes
    </td>
 
   </tr>
@@ -126,7 +122,7 @@
    <td>2. As a user of the CLI program, I can <strong>select</strong> users and channels	with the commands <code>select user</code> and <code>select channel</code>
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -134,7 +130,7 @@
    <td>3. As a user of the CLI program, I can show the details of a selected user or channel	with the command <code>details</code>
    </td>
    <td>
-      yes/no
+      Kind of when the User initially runs if the program. An enter invalid selection. The program continue through the loop however, do not alert loser that thier selection is in valid.
    </td>
   </tr>
 
@@ -142,7 +138,7 @@
    <td>4. As a user of the CLI program, when I input something inappropriately, the program runs without crashing. Example commands to try are <code>do_something</code>, or <code>select user</code> followed by <code>Mr. Fakename</code>
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 </table>
