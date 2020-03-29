@@ -68,7 +68,7 @@ Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
     - Answer: to list the channels of said workspace
 1. Who is the client?
-    - Answer: Grace
+    - Answer: the computer 
 1. Who is the server?
     - Answer: Slack API
 
@@ -84,4 +84,4 @@ If your reflection inspired you to make minimal changes to your Slack CLI implem
 
 ### Describe your optional Slack CLI changes here
 
-Answer: 
+Answer: I added the table print functionality. I tried adding "real" error messages for invalid inputs, however I was afraid this would mess up all of my testing and put me over the 3 hour mark 
