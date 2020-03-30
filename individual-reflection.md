@@ -80,4 +80,10 @@ If your reflection inspired you to make minimal changes to your Slack CLI implem
 
 ### Describe your optional Slack CLI changes here
 
-Answer: I did not refactor after completing my reflection
+Answer: I did not refactor after completing my reflection. Future to-do items I'd consider: 
+1. add additional testing (coverage is currently 80%):
+    * posting messages 
+    * testing for failure cases when endpoints respond with NOT OK 
+2. refactor my parent Conversations class so that it implements self.list_all, because currently it's implemented similarly inside both of its children classes
+3. change the user attribute on Direct Message conversations to store User objects instead of id strings. This was my original motivation for separating Users from Direct Messages but I didn't have time to complete this implementation
+4. refactor slack.rb and workspace.rb so that workspace does the majority of the user input validation. Currently all validation is done from the CLI driver, mainly because the driver is doing some flamboyant code gymnastics to number each User/Channel item as they're printed (which wasn't in Workspace.rb's job description, as per my initial design). However, I could separate the check for existance of an ID out of the driver code and make it a function in Workspace.rb
