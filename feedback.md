@@ -118,7 +118,7 @@
    <td>1. As a user of the CLI program, I can <strong>list</strong> users and channels with the commands <code>list users</code> and <code>list channels</code>
    </td>
    <td>
-      yes/no
+      Was not able to run program with ENV token.
    </td>
 
   </tr>
