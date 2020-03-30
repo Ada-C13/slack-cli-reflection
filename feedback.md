@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Angela
+- Reviewer: Quin
+- Classroom: Time 
 
 ## Manual App Testing
 
@@ -17,7 +17,7 @@
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
     </td>
     <td>
-      yes
+      Yes, you have your .env in your project root folder and .env in your .gitignore. Well done!
     </td>
   </tr>
 
@@ -26,7 +26,7 @@
       2. Practices error handling with APIs. (For all pieces of code that make an API call, it handles API requests that come back with errors/error status codes appropriately.)
    </td>
    <td>
-      yes
+      Yes, you did especially well on this! Nice work on making the custom error class! 
    </td>
   </tr>
 
@@ -35,7 +35,7 @@
       3. Implements inheritance and inheritance idioms. There is a Recipient class. User and Channel inherit from Recipient. In Recipient, there are appropriate methods defined that are used in both User and Channel. Some may be implemented. Some may be template methods.	
    </td>
    <td>
-      yes
+      Yes, not exactly this type of inheritence, however your program works and the classes flow well together. 
    </td>
   </tr>
 
@@ -51,7 +51,7 @@
   </ul>
     </td>
    <td>
-      yes
+      Yes, all your methods are short and sweet. 
    </td>
   </tr>
 
@@ -60,7 +60,7 @@
     5. Practices instance methods vs. class methods appropriately. (The methods to list all Channels or Users is a class method within those respective classes.)
    </td>
    <td>
-      yes
+      Yes, I believe you used them all correctly! I see you have a .list_all and .get_all, I am a little confused as to why there are 2 similar class methods, but nicely written and concise! 
    </td>
   </tr>
 
@@ -80,7 +80,7 @@
       7. Practices writing tests. (The User, Channel, and Workspace classes have unit tests.)	
     </td>
     <td>
-      yes
+     Yes
     </td>
   </tr>
 
@@ -100,7 +100,7 @@
       9. Practices git with at least 15 small commits and meaningful commit messages	
    </td>
     <td>
-      yes
+      Yes, great git hygiene! :) 
     </td>
   </tr>
 </table>
