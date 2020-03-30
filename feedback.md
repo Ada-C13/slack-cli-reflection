@@ -1,8 +1,8 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer:
-- Classroom:
+- Student Being Reviewed: Jocelyn Wang
+- Reviewer: Yaz O'Shaughnessy
+- Classroom: Time
 
 ## Manual App Testing
 
