@@ -1,7 +1,7 @@
 # Feedback Rubric
 
-- Student Being Reviewed:
-- Reviewer: Yieni
+- Student Being Reviewed: Stephanie 
+- Reviewer: Hala Haddad
 - Classroom: Space
 
 ## Manual App Testing
@@ -14,7 +14,7 @@
 
   <tr>
     <td>
-      1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
+      1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.) 
     </td>
     <td>
       yes
@@ -41,10 +41,10 @@
 
   <tr>
     <td>
-      4. Practices clean code. 
+      4. Practices clean code.  yes
   <ul>
 
-  <li>lib/slack.rb only interacts with Workspace (to show a separation of responsibilities). 
+  <li>lib/slack.rb only interacts with Workspace (to show a separation of responsibilities).  yes
 
   <li>Complex logic is broken into smaller helper methods. (There aren’t more than one or two methods that are 30 lines or more)
   </li>
@@ -80,7 +80,7 @@
       7. Practices writing tests. (The User, Channel, and Workspace classes have unit tests.)	
     </td>
     <td>
-      yes
+     yes, but incomplete
     </td>
   </tr>
 
@@ -90,7 +90,7 @@
       8. There are also tests for sending messages (the location of these tests may differ, but is likely in Recipient)	
     </td>
     <td>
-      yes
+      no
     </td>
   </tr>
 
@@ -100,7 +100,7 @@
       9. Practices git with at least 15 small commits and meaningful commit messages	
    </td>
     <td>
-      no
+      yes
     </td>
   </tr>
 </table>
@@ -134,7 +134,7 @@
    <td>3. As a user of the CLI program, I can show the details of a selected user or channel	with the command <code>details</code>
    </td>
    <td>
-      no- the show details feature isn't working. It keeps saying wrong input even when a user or channel is selected.
+      yes
    </td>
   </tr>
 
@@ -142,7 +142,7 @@
    <td>4. As a user of the CLI program, when I input something inappropriately, the program runs without crashing. Example commands to try are <code>do_something</code>, or <code>select user</code> followed by <code>Mr. Fakename</code>
    </td>
    <td>
-      yes
+      yes 
    </td>
   </tr>
 </table>
