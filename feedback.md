@@ -17,7 +17,7 @@
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
     </td>
     <td>
-      "test_helper.rb" contains an API token on line 37, where the token is passed as a parameter to ".filter_sensitive_data". This means the token gets outputted inside all the cassettes as well. You can hide the API token by replacing it with a different substitution string when .filter_sensitive_data is called. More details on <a href="(https://relishapp.com/vcr/vcr/v/3-0-1/docs/configuration/filter-sensitive-data)">this syntax here</a>.
+      "test_helper.rb" contains an API token on line 37, where the token is passed as a parameter to ".filter_sensitive_data". This means the token gets outputted inside all the cassettes as well. You can hide the API token by replacing it with a different substitution string when .filter_sensitive_data is called. More details on <a href="https://relishapp.com/vcr/vcr/v/3-0-1/docs/configuration/filter-sensitive-data">this syntax here</a>.
     </td>
   </tr>
 
