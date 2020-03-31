@@ -17,7 +17,7 @@
       1. Practices best practices working with APIs. (The .env is not checked into git, and no API token was directly used in the Ruby code without ENV.)
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -26,7 +26,7 @@
       2. Practices error handling with APIs. (For all pieces of code that make an API call, it handles API requests that come back with errors/error status codes appropriately.)
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -35,7 +35,7 @@
       3. Implements inheritance and inheritance idioms. There is a Recipient class. User and Channel inherit from Recipient. In Recipient, there are appropriate methods defined that are used in both User and Channel. Some may be implemented. Some may be template methods.	
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -51,7 +51,7 @@
   </ul>
     </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -60,7 +60,7 @@
     5. Practices instance methods vs. class methods appropriately. (The methods to list all Channels or Users is a class method within those respective classes.)
    </td>
    <td>
-      yes/no
+      yes
    </td>
   </tr>
 
@@ -70,7 +70,7 @@
       6. Practices best practices for testing. (The project has and uses VCR mocking when running tests, and can run offline.)
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -80,7 +80,7 @@
       7. Practices writing tests. (The User, Channel, and Workspace classes have unit tests.)	
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -90,7 +90,7 @@
       8. There are also tests for sending messages (the location of these tests may differ, but is likely in Recipient)	
     </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 
@@ -100,7 +100,7 @@
       9. Practices git with at least 15 small commits and meaningful commit messages	
    </td>
     <td>
-      yes/no
+      yes
     </td>
   </tr>
 </table>
@@ -118,7 +118,10 @@
    <td>1. As a user of the CLI program, I can <strong>list</strong> users and channels with the commands <code>list users</code> and <code>list channels</code>
    </td>
    <td>
-      yes/no
+      It looks like functionality for this is available (and I assume working), but when I try to run the program from terminal, I get a "cannot load such file" error: Traceback (most recent call last):
+	2: from slack.rb:3:in `<main>'
+	1: from /Users/Ruya/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/Users/Ruya/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- tty-prompt (LoadError)
    </td>
 
   </tr>
@@ -126,7 +129,7 @@
    <td>2. As a user of the CLI program, I can <strong>select</strong> users and channels	with the commands <code>select user</code> and <code>select channel</code>
    </td>
    <td>
-      yes/no
+      ^
    </td>
   </tr>
 
@@ -134,7 +137,7 @@
    <td>3. As a user of the CLI program, I can show the details of a selected user or channel	with the command <code>details</code>
    </td>
    <td>
-      yes/no
+      ^
    </td>
   </tr>
 
@@ -142,7 +145,7 @@
    <td>4. As a user of the CLI program, when I input something inappropriately, the program runs without crashing. Example commands to try are <code>do_something</code>, or <code>select user</code> followed by <code>Mr. Fakename</code>
    </td>
    <td>
-      yes/no
+      ^
    </td>
   </tr>
 </table>
