@@ -39,7 +39,7 @@ Answer the following comprehension questions **within this file.** Write your an
 If your project does not make a POST request, read through Wave 3 on the original Slack CLI, and research and answer questions 1, 2, 3, 4, 6, and 7.
 
 1. Describe a POST request that your project makes, and the high-level description of what it does
-    - Answer: POSt request is the client tells the server that here is some data, please save it. In this case, it will post a message on the channel that was chosen. 
+    - Answer: POSt request is the client tells the server that here is some data, please save it. In this case, it will post a message on the channel that was chosen..
 1. What is the verb of this request?
     - Answer: POST
 1. What is the path (or the URL, or endpoint) of this request?
