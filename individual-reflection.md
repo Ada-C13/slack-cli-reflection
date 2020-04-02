@@ -63,7 +63,7 @@ If your project does not make a POST request, read through Wave 3 on the origina
 1. What does the program do if the response comes back with a status code of 200?
     - Answer: if the reponse comes back with a status code of 200, it will post the message successfully on the channel that was chosen. 
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: it will raise the SlackAPIError - "We encountered a problem: #{response["error"]}"
+    - Answer: it will raise the SlackAPIError - "We encountered a problem: #{response["error"]}".
 
 ## Request & Response Cycle
 
