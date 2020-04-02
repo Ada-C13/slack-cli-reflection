@@ -23,23 +23,23 @@ Answer the following comprehension questions **within this file.** Write your an
         response = HTTParty.get(url, query: {token: ENV['SLACK_TOKEN']})
 
         if response.code != 200 || response["ok"] == false
-      raise SlackAPIError, "We encountered a problem: #{response["error"]}"
+          raise SlackAPIError, "We encountered a problem: #{response["error"]}"
         end
 
         return response
         end
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: OK/success
+    - Answer: if the reponse comes back with a status of 200, the program will return the response such as list of users or list of the channels. 
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: ["ok"] == false
+    - Answer: it will raise the SlackAPIError - "We encountered a problem: #{response["error"]}"
 
 ### `POST` Request Review
 
 If your project does not make a POST request, read through Wave 3 on the original Slack CLI, and research and answer questions 1, 2, 3, 4, 6, and 7.
 
 1. Describe a POST request that your project makes, and the high-level description of what it does
-    - Answer: POSt request is the client tells the server that here is some data, please save it. 
+    - Answer: POSt request is the client tells the server that here is some data, please save it. In this case, it will post a message on the channel that was chosen. 
 1. What is the verb of this request?
     - Answer: POST
 1. What is the path (or the URL, or endpoint) of this request?
@@ -61,9 +61,9 @@ If your project does not make a POST request, read through Wave 3 on the origina
         
       ```
 1. What does the program do if the response comes back with a status code of 200?
-    - Answer: OK or Sucess
+    - Answer: if the reponse comes back with a status code of 200, it will post the message successfully on the channel that was chosen. 
 1. What does the program do if the response does not come back with a status code of 200?
-    - Answer: ["ok"] == false
+    - Answer: it will raise the SlackAPIError - "We encountered a problem: #{response["error"]}"
 
 ## Request & Response Cycle
 
@@ -75,9 +75,9 @@ There are two actors:
 
 Based on the project requirements, when Grace enters "list channels,"
 1. What is the request being made in the program?
-    - Answer: the reguest will get the list of channels for the user through their computer.
+    - Answer: the reguest will get the list of channels for the user through their computer, so the GET request is made. 
 1. Who is the client?
-    - Answer: user and their computer
+    - Answer: user(Grace) and their computer
 1. Who is the server?
     - Answer: Slack Api
 
